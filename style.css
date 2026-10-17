@@ -1,0 +1,93 @@
+/* Whole page */
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #222;
+}
+
+
+header {
+    background-color: #111827;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+body {
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: white;
+}
+
+header {
+  background-color: rgba(0, 0, 128, 0.7);
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: first baseline;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+
+/* Navigation */
+nav a {
+  color: black;
+  text-decoration: none;
+  margin-left: 100px;
+  font-weight: bolder;
+}
+main {
+  min-height: calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+h1 {
+  margin-top: 0;
+  color: #2563eb;
+  font-size: 42px;
+}
+#messi-title {
+  margin-top: 0;
+  color: #e4e4e4;
+  font-size: 42px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.max {
+
+  width: 300px;
+  height: 300px;
+}
+/* #messi2 {
+  
+  width: 700px;
+  height: 700px;
+} */
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}

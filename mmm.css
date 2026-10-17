@@ -1,0 +1,120 @@
+/* Whole page */
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #222;
+}
+
+
+header {
+    background-color: #111827;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+body {
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: white;
+}
+
+
+header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+
+header {
+  background-color: rgba(0, 0, 128, 0.7);
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: first baseline;
+}
+
+/* Navigation */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 100px;
+  font-weight: bolder;
+}
+main {
+  min-height: calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+nav a:hover {
+  color: rgb(210, 48, 48);
+}
+
+/* Main content */
+main {
+  min-height: calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* Main heading */
+h1 {
+  color:navy
+  (11, 27, 108);
+  font-size: 40px;
+}
+
+/* Section headings */
+h2 {
+  color:navy
+}
+
+/* Lists */
+ul,
+ol {
+  max-width: 800px;
+  text-align:left;
+  line-height: 1.8;
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000066;
+}
+
+
+
+
+.copyright {/* Footer */
+  background-color: navy;
+  color: white;
+  text-align: center;
+  
+  margin: 0;
+  padding: 15px 0;
+}
+ul li {
+  color:white
+}

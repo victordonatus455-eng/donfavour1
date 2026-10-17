@@ -1,0 +1,337 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Us - Don Favour Limited</title>
+
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+
+        font-family: Arial, sans-serif;
+
+        background-image: url("ffin.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      /* HEADER */
+
+      header {
+
+        padding: 15px 30px;
+
+        display: flex;
+        align-items: center;
+
+        gap: 25px;
+      }
+
+      .logo {
+        width: 70px;
+        height: 70px;
+
+        border-radius: 50%;
+
+        object-fit: cover;
+      }
+
+      header h1 {
+        color: white;
+
+        font-size: 24px;
+
+        margin: 0;
+
+        flex: 1;
+      }
+
+      nav {
+        display: flex;
+        gap: 20px;
+      }
+
+      nav a {
+        color: white;
+
+        text-decoration: none;
+margin-right: 70px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #ccccff;
+      }
+
+      /* CONTACT SECTION */
+
+      .contact-section {
+        min-height: calc(100vh - 150px);
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        padding: 30px 20px;
+      }
+
+      .contact-box {
+        width: 500px;
+
+        padding: 35px;
+
+        background-color: rgba(255, 255, 255, 0.95);
+
+        border-radius: 15px;
+
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      }
+
+      .contact-box h2 {
+        text-align: center;
+
+        color: navy;
+
+        font-size: 35px;
+      }
+
+      .intro {
+        text-align: center;
+
+        color: #555;
+
+        margin-bottom: 25px;
+      }
+
+      /* CONTACT INFORMATION */
+
+      .contact-info {
+        background-color: #f1f3f8;
+
+        padding: 15px;
+
+        border-radius: 10px;
+
+        margin-bottom: 20px;
+      }
+
+      .contact-info h3 {
+        color: navy;
+      }
+
+      .contact-info p {
+        color: #333;
+      }
+
+      /* FORM */
+
+      label {
+        display: block;
+
+        font-weight: bold;
+
+        margin-top: 15px;
+
+        margin-bottom: 5px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+
+        padding: 12px;
+
+        box-sizing: border-box;
+
+        border: 1px solid #ccc;
+
+        border-radius: 7px;
+
+        font-size: 15px;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      /* SEND BUTTON */
+
+      .send-button {
+        width: 100%;
+
+        margin-top: 25px;
+
+        padding: 13px;
+
+        background-color: #25d366;
+
+        color: white;
+
+        border: none;
+
+        border-radius: 7px;
+
+        font-size: 16px;
+
+        font-weight: bold;
+
+        cursor: pointer;
+      }
+
+      .send-button:hover {
+        background-color: #128c7e;
+      }
+
+      /* FOOTER */
+
+      footer {
+        text-align: center;
+
+
+        color: white;
+
+        padding: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <header>
+      <img src="fish.png" alt="Don Favour Logo" class="logo" />
+
+      <h1>REST EASY, DREAM BIG</h1>
+
+      <nav>
+        <a href="home.html">Home</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="about.html">About</a>
+
+        <a href="contact us.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- CONTACT SECTION -->
+
+    <main class="contact-section">
+      <div class="contact-box">
+        <h2>Contact Us</h2>
+
+        <p class="intro">
+          We would love to hear from you. Send us a message on WhatsApp.
+        </p>
+
+        <!-- CONTACT INFORMATION -->
+
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+
+          <p>
+            <strong>Company:</strong>
+            Don Favour Limited
+          </p>
+
+          <p>
+            <strong>Email:</strong>
+            idokofavour04@gmail.com
+          </p>
+
+          <p>
+            <strong>Phone:</strong>
+            +234 7061866093
+          </p>
+        </div>
+
+        <!-- CONTACT FORM -->
+
+        <form
+          onsubmit="
+            sendToWhatsApp();
+            return false;
+          "
+        >
+          <label for="name"> Full Name </label>
+
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+            required
+          />
+
+          <label for="email"> Email </label>
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="message"> Message </label>
+
+          <textarea
+            id="message"
+            rows="5"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+
+          <button type="submit" class="send-button">
+            Send Message on WhatsApp
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <p>&copy; 2026 Don Favour. All Rights Reserved.</p>
+    </footer>
+
+    <!-- WHATSAPP SCRIPT -->
+
+    <script>
+      function sendToWhatsApp() {
+        let name = document.getElementById("name").value;
+
+        let email = document.getElementById("email").value;
+
+        let message = document.getElementById("message").value;
+
+        /* CHANGE THIS TO YOUR WHATSAPP NUMBER */
+
+        let phoneNumber = "2347061866093";
+
+        let whatsappMessage =
+          "Hello Don Favour Limited!" +
+          "\n\nName: " +
+          name +
+          "\nEmail: " +
+          email +
+          "\nMessage: " +
+          message;
+
+        let whatsappLink =
+          "https://wa.me/" +
+          phoneNumber +
+          "?text=" +
+          encodeURIComponent(whatsappMessage);
+
+        window.location.href = whatsappLink;
+      }
+    </script>
+  </body>
+</html>

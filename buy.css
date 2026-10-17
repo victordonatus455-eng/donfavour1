@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    padding: 20px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #bfc8ff;
+}
+
+.checkout-container {
+    min-height: calc(100vh - 85px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+.checkout-card {
+    width: 100%;
+    max-width: 550px;
+
+    background-color: white;
+    padding: 35px;
+
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+.checkout-card h2 {
+    text-align: center;
+    color: navy;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.product-box {
+    background-color: #f0f3fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.product-box p {
+    margin: 8px 0;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: navy;
+}
+
+.total-box {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 25px;
+    padding: 18px;
+
+    background-color: #eef1f8;
+    border-radius: 8px;
+
+    font-size: 20px;
+}
+
+#payButton {
+    width: 100%;
+    margin-top: 25px;
+
+    padding: 14px;
+
+    background-color: navy;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#payButton:hover {
+    background-color: #000066;
+}
+
+#payButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#message {
+    text-align: center;
+    margin-top: 15px;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .checkout-card {
+        padding: 25px 20px;
+    }
+}

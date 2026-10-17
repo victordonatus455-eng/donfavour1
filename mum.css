@@ -1,0 +1,466 @@
+
+/* =========================
+   GENERAL PAGE STYLING
+   ========================= */
+
+body {
+    margin: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+    /* Background image */
+    background-image: url("dad.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   WEBSITE TITLE
+   ========================= */
+
+#shy {
+    display: flex;
+    justify-content: center;
+
+    font-size: 30px;
+    margin: 20px 0;
+
+    color: white;
+
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    padding: 15px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Logo */
+
+header img {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+
+    margin-left: 50px;
+
+    font-weight: bold;
+
+    color: #2589c9;
+
+    transition: 0.3s;
+}
+
+
+/* Visited link */
+
+nav a:visited {
+    color: white;
+}
+
+
+/* Mouse over link */
+
+nav a:hover {
+    color: rgb(9, 1, 68);
+}
+
+
+/* Link while being clicked */
+
+nav a:active {
+    color: red;
+}
+
+
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero {
+    width: 100%;
+
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 0;
+}
+
+
+/* Hero text box */
+
+.hero-text {
+    width: 70%;
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 30px;
+
+    text-align: center;
+
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0.45);
+
+    border-radius: 15px;
+
+    box-sizing: border-box;
+}
+
+
+/* Hero heading */
+
+.hero-text h2 {
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Hero paragraphs */
+
+.hero-text p {
+    font-size: 20px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   LEARN MORE BUTTON
+   ========================= */
+
+.learn-more {
+    display: flex;
+    justify-content: center;
+
+    margin: 20px 0 40px;
+}
+
+
+#sheet {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background-color: navy;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+#sheet:hover {
+    background-color: #2589c9;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+.city {
+    color: white;
+
+    margin: 0;
+}
+
+
+/* =========================
+   ABOUT US SECTION
+   ========================= */
+
+.about-us {
+    min-height: 100vh;
+
+    padding: 80px 20px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about-content {
+    width: 90%;
+    max-width: 1000px;
+
+    text-align: center;
+}
+
+
+.about-content h1 {
+    color: navy;
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+
+.about-content h2 {
+    color: #c49a3a;
+
+    font-size: 24px;
+
+    margin-bottom: 30px;
+}
+
+
+.about-content p {
+    color: #333;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   ABOUT BOXES
+   ========================= */
+
+.about-boxes {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin: 40px 0;
+
+    flex-wrap: wrap;
+}
+
+
+.about-box {
+    width: 260px;
+
+    padding: 25px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.3s ease;
+}
+
+
+.about-box:hover {
+    transform: translateY(-8px);
+}
+
+
+.about-box h3 {
+    color: navy;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+
+.about-box p {
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+.closing-text {
+    font-weight: bold;
+
+    color: navy !important;
+
+    margin-top: 30px;
+}
+
+
+.slogan {
+    color: #c49a3a;
+
+    font-size: 20px;
+
+    margin-top: 25px;
+}
+
+
+/* =========================
+   SERVICES
+   ========================= */
+
+.services {
+    text-align: center;
+}
+
+
+.services > h1 {
+    color: navy;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   PRODUCT
+   ========================= */
+
+.product {
+    background-color: rgba(255, 255, 255, 0.9);
+
+    width: 350px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+}
+
+
+/* Product image */
+
+#service-image {
+    width: 300px;
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin: 0 auto;
+
+    border-radius: 10px;
+}
+
+
+/* Product title */
+
+#service-title {
+    color: navy;
+
+    font-size: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* Product price */
+
+.price {
+    color: red !important;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+@media (max-width: 768px) {
+
+    #shy {
+        font-size: 24px;
+    }
+
+    header {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    nav a {
+        margin-left: 0;
+    }
+
+    .hero-text {
+        width: 90%;
+
+        padding: 20px;
+    }
+
+    .hero-text h2 {
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        font-size: 17px;
+    }
+
+    .product {
+        width: 85%;
+    }
+
+    #service-image {
+        width: 100%;
+        height: auto;
+    }
+}
